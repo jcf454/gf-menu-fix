@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GF Menu Fix — Gluten‑Free & Diet Labeling for Restaurants</title>
+  <meta name="description" content="I help restaurants convert more guests by fixing menus and websites: gluten‑free, vegan, vegetarian labels, cross‑contact notes, mobile menus, and local SEO." />
+  <style>
+    :root{
+      --bg:#0e1117; --card:#161a22; --text:#e6e8ec; --muted:#aeb4c0; --accent:#63e6be; --accent2:#7cb3ff; --danger:#ffb4a4;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg,rgba(14,17,23,.95),rgba(14,17,23,.75));backdrop-filter:blur(8px);border-bottom:1px solid #222}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .cta{background:var(--accent);color:#062417;border:none;padding:10px 16px;border-radius:12px;font-weight:700;cursor:pointer}
+    .cta:hover{filter:brightness(1.1)}
+    .grid{display:grid;gap:20px}
+    .hero{padding:48px 0;display:grid;gap:24px}
+    .card{background:var(--card);border:1px solid #222;border-radius:16px;padding:20px}
+    h1{font-size:clamp(28px,4vw,48px);line-height:1.1;margin:0}
+    h2{font-size:clamp(22px,3vw,32px);margin:0 0 12px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#0b1320;border:1px solid #222;border-radius:999px;padding:6px 10px;color:var(--muted);font-size:14px}
+    .list{margin:0;padding-left:20px}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi span{background:#0b1320;border:1px solid #222;border-radius:12px;padding:8px 12px;color:var(--muted);font-size:14px}
+    .pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .price .tag{font-size:32px;font-weight:800}
+    footer{padding:40px 0;color:var(--muted);font-size:14px}
+    .badge{display:inline-block;background:#122235;border:1px solid #1e2b40;color:#b3cffd;padding:4px 8px;border-radius:8px;font-size:12px}
+    .btn-ghost{background:#10151f;border:1px solid #243148;color:var(--text);padding:10px 14px;border-radius:12px;font-weight:600}
+    .two{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    .table{width:100%;border-collapse:collapse;font-size:15px}
+    .table th,.table td{border-bottom:1px dashed #2a2f3a;padding:10px;text-align:left}
+    .ok{color:var(--accent)} .warn{color:var(--danger)}
+    .mute{color:var(--muted)}
+    .legend{display:flex;gap:10px;flex-wrap:wrap}
+    .legend span{background:#0b1320;border:1px solid #222;border-radius:8px;padding:6px 10px;font-size:13px;color:var(--muted)}
+    .foot-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .small{font-size:13px;color:var(--muted)}
+    .code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#0b1320;border:1px solid #222;border-radius:12px;padding:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">GF Menu Fix</div>
+      <nav class="kpi">
+        <a href="#work">Work</a>
+        <a href="#offer">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Book</a>
+        <button class="cta" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">Free GF Audit</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero two">
+      <div class="card">
+        <span class="pill">Built by someone with celiac ♡</span>
+        <h1>Fix your menu & website to win gluten‑free, vegan, and vegetarian guests.</h1>
+        <p class="mute">I help restaurants label menus clearly, convert PDFs to fast mobile pages, add cross‑contact notes, and show up for searches like “gluten‑free near me.”
+        </p>
+        <div class="kpi">
+          <span>Menu labeling (GF/V/Veg)</span>
+          <span>Cross‑contact guidance</span>
+          <span>Mobile menu rebuild</span>
+          <span>Local SEO tune‑up</span>
+        </div>
+        <div class="foot-actions" style="margin-top:14px">
+          <a class="cta" href="#book">Get a free 5‑min audit</a>
+          <a class="btn-ghost" href="#offer">See what I fix</a>
+        </div>
+        <p class="small" style="margin-top:8px">Average turnaround: 7 days. Honest labeling—no “gluten‑friendly” fluff.</p>
+      </div>
+      <div class="card">
+        <h2 id="work">What your guests see today</h2>
+        <table class="table">
+          <tr><th>Item</th><th>Status</th><th>Impact</th></tr>
+          <tr><td>Menu is a PDF image</td><td class="warn">Hidden from Google</td><td class="mute">Searches for “gluten‑free” can’t find you</td></tr>
+          <tr><td>No GF/vegan icons</td><td class="warn">Confusing</td><td class="mute">Guests bounce or call the host stand</td></tr>
+          <tr><td>No cross‑contact notes</td><td class="warn">Risky</td><td class="mute">Celiac guests won’t risk it</td></tr>
+          <tr><td>Slow mobile page</td><td class="warn">15s load</td><td class="mute">Hungry users leave</td></tr>
+          <tr><td>Google listing</td><td class="warn">No “GF options”</td><td class="mute">Misses map traffic</td></tr>
+        </table>
+        <p class="small">I’ll record a 2–3 minute walkthrough (Loom) showing 3 concrete wins and how to implement them.</p>
+      </div>
+    </section>
+
+    <section id="offer" class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:8px">
+      <div class="card">
+        <h2>Menu audit</h2>
+        <ul class="list">
+          <li>Label GF / Vegan / Vegetarian correctly</li>
+          <li>Add clear icon legend + disclaimers</li>
+          <li>Flag cross‑contact & prep risks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Web & SEO</h2>
+        <ul class="list">
+          <li>Convert PDF/JPG to mobile menu page</li>
+          <li>Add alt text + schema for “Gluten‑Free Diet”</li>
+          <li>Update Google Business Profile attributes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Ops tools</h2>
+        <ul class="list">
+          <li>1‑page cross‑contact checklist</li>
+          <li>Server/host answer scripts</li>
+          <li>Review replies for GF questions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing" style="margin-top:16px">
+      <div class="card price">
+        <span class="badge">Starter</span>
+        <h3>Audit & Plan</h3>
+        <div class="tag">$199</div>
+        <p class="mute">PDF audit + 10‑min walkthrough + prioritized fix list.</p>
+      </div>
+      <div class="card price">
+        <span class="badge">Most popular</span>
+        <h3>Implement</h3>
+        <div class="tag">$1,250</div>
+        <p class="mute">Menu rebuild, labels/icons, cross‑contact notes, local SEO tune‑up.</p>
+      </div>
+      <div class="card price">
+        <span class="badge">Ongoing</span>
+        <h3>Care Plan</h3>
+        <div class="tag">$350/mo</div>
+        <p class="mute">Seasonal updates, GBP posts, review replies, quarterly checks.</p>
+      </div>
+    </section>
+
+    <section class="card" id="book" style="margin-top:20px">
+      <h2>Book your free 5‑minute GF visibility audit</h2>
+      <p class="mute">I’ll review your current menu & web presence and send a quick video with 3 fixes.</p>
+      <div class="legend">
+        <span>✔ 2–3 minute Loom video</span>
+        <span>✔ Actionable, no fluff</span>
+        <span>✔ Ready in 24 hours</span>
+      </div>
+      <div class="foot-actions" style="margin-top:12px">
+        <a class="cta" href="https://calendly.com/your-calendly" target="_blank" rel="noopener">Schedule on Calendly</a>
+        <a class="btn-ghost" href="mailto:youremail@example.com?subject=GF%20Menu%20Audit%20Request">Email me instead</a>
+      </div>
+      <p class="small">Replace the links above with your Calendly + email.</p>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h2>Why trust me?</h2>
+      <p>I have celiac disease and build guest‑friendly menus that are honest and conversion‑focused. I combine lived experience with technical execution so your team can answer dietary questions confidently.</p>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h2>FAQ</h2>
+      <details><summary>Is this a legal certification?</summary>
+        <p class="mute">No. I help you communicate clearly and reduce confusion. I don’t certify food safety; I add practical cross‑contact guidance and clear disclaimers.</p>
+      </details>
+      <details><summary>How fast is the turnaround?</summary>
+        <p class="mute">Audits in 24 hours. Full implementation in ~7 days for most restaurants.</p>
+      </details>
+      <details><summary>What do you need from us?</summary>
+        <p class="mute">Your current menu (PDF or images), any prep notes, and a quick call to align on labeling policy.</p>
+      </details>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> GF Menu Fix · <a href="#book">Book a free audit</a></p>
+        <p class="small">Built fast with clean HTML/CSS. Host on Netlify, Vercel, or GitHub Pages.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional: Basic LocalBusiness schema for SEO (edit your name & contact) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GF Menu Fix",
+    "image": "",
+    "description": "Menu labeling and website fixes for gluten‑free, vegan, and vegetarian diners.",
+    "areaServed": "United States",
+    "url": "https://yourdomain.com",
+    "email": "youremail@example.com",
+    "sameAs": [],
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "Indianapolis metro"
+    }
+  }
+  </script>
+</body>
+</html>
